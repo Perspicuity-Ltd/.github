@@ -6,36 +6,21 @@ labels: [
 ]
 body:
   - type: textarea
-    id: description
-    attributes:
-      label: "Description"
-      description: Please enter an explicit description of your issue
-      placeholder: Short and explicit description of your incident...
     validations:
       required: true
-  - type: textarea
-    id: reprod
     attributes:
-      label: "Reproduction steps"
-      description: Please provide detailed steps for reproducing the issue.
-      value: |
-        1. Go to '...'
-        2. Click on '....'
-        3. Scroll down to '....'
-        4. See error
-      render: bash
+      label: Describe the problem
+      description: |
+        Describe the problem clearly here. Include descriptions of the expected behavior and the actual behavior.
+
+  - type: textarea
     validations:
       required: true
-  - type: textarea
-    id: screenshot
     attributes:
-      label: "Screenshots"
-      description: If applicable, add screenshots to help explain your problem.
-      value: |
-        ![DESCRIPTION](LINK.png)
-      render: bash
-    validations:
-      required: false
+      label: Steps to reproduce the bug
+      description: |
+        **Record steps to reproduce the bug as a video or GIF** (to eliminate ambiguity) and attach it here.
+      
   - type: textarea
     id: logs
     attributes:
