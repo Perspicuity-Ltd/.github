@@ -5,7 +5,7 @@ labels: [
   "question"
 ]
 body:
-  §- type: textarea
+  - type: textarea
     id: reference_issues
     attributes:
       label: "Reference Issues"
