@@ -1,0 +1,42 @@
+name: "Feature Request"
+description: Use this template for feature and enhancement proposals.
+title: "feat: <title>"
+labels: [
+  "enhancement"
+]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: |
+        In a few sentences, provide a clear, high-level description of the feature request
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: |
+        Use this section to include any additional information about the feature. If you have a proposal for how to implement this feature, please include it here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: drawbacks
+    attributes:
+      label: "Drawbacks"
+      description: What are the drawbacks/impacts of your feature request?
+      placeholder: Identify the drawbacks and impacts while being neutral on your feature request
+    validations:
+      required: false
+
+  - type: textarea
+    id: unresolved_question
+    attributes:
+      label: "Unresolved questions"
+      description: What questions still remain unresolved?
+      placeholder: Identify any unresolved issues.
+    validations:
+      required: false
