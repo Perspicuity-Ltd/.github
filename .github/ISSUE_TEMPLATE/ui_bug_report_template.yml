@@ -1,4 +1,4 @@
-name: Report UI Issue
+name: Report Bug (UI)
 description: Create a report to help us reproduce and correct a UI bug.
 labels: ["bug"]
 title: "bug: <title>"
