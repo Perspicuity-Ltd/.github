@@ -10,7 +10,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  stale:
+  stale_issues:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/stale@v3
