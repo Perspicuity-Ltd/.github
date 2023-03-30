@@ -3,7 +3,7 @@ name: 'Identify and close stale issues and PRs'
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * 1-5' # At 06:00 AM, Monday through Friday
+    - cron: '30 6 * * 1-5'
 
 permissions:
   issues: write
@@ -13,7 +13,7 @@ jobs:
   stale_issues:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/stale@v3
+      - uses: actions/stale@v7
         with:
           stale-issue-message:
             This issue has been identified as stale because it
@@ -32,5 +32,5 @@ jobs:
             you **can merge it yourself.**
           days-before-stale: 30
           days-before-close: 5
-          exempt-issue-labels: "keep-me"
-          exempt-pr-labels: "keep-me"
+          exempt-issue-labels: "awaiting-approval,work-in-progress,keep-me"
+          exempt-pr-labels: "awaiting-approval,work-in-progress,keep-me"
