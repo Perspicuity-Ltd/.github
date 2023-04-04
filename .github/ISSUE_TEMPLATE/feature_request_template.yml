@@ -2,7 +2,7 @@ name: "Feature Request"
 description: Use this template for feature and enhancement proposals.
 title: "feat: <title>"
 labels: [
-  "enhancement"
+  "enhancement", "needs-triage"
 ]
 body:
   - type: textarea
