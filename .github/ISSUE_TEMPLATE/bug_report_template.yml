@@ -2,7 +2,7 @@ name: "Report Bug"
 description: Create a report to help us reproduce and correct a bug.
 title: "bug: <title>"
 labels: [
-  "bug"
+  "bug", "needs-triage"
 ]
 body:
   - type: textarea
