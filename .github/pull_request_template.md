@@ -11,15 +11,6 @@ Please delete options that are not relevant.
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 - [ ] This change requires a documentation update
 
-## Request reviewer
-You can add desired reviewers here with an @mention.  
-
-## How has this been tested?
-Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration
-
-- [ ] Test A
-- [ ] Test B
-
 ## Before submitting this PR, please make sure:
 - [ ] You've followed our [pull request guidelines](https://developer.perspicuity.co.uk/life-as-a-developer/pull-request-guidelines)
 - [ ] Your code builds clean without any errors or warnings

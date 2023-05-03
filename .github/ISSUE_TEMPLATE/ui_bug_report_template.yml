@@ -1,7 +1,7 @@
 name: Report Bug (UI)
 description: Create a report to help us reproduce and correct a UI bug.
-labels: ["bug", "needs-triage"]
-title: "bug: <title>"
+labels: ["bug"]
+title: "<title>"
 
 body:
   - type: textarea

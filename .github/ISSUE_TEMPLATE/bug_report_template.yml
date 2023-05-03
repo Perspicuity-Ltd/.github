@@ -1,8 +1,8 @@
 name: "Report Bug"
 description: Create a report to help us reproduce and correct a bug.
-title: "bug: <title>"
+title: "<title>"
 labels: [
-  "bug", "needs-triage"
+  "bug"
 ]
 body:
   - type: textarea
