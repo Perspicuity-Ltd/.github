@@ -6,37 +6,37 @@ labels: [
 ]
 body:
   - type: textarea
-    id: summary
+    id: description
     attributes:
-      label: Summary
+      label: Description
       description: |
-        In a few sentences, provide a clear, high-level description of the feature request
+        Provide a detailed description of the new feature, including its purpose and objectives. Be sure to explain how the feature will benefit the user and provide any necessary background information.
     validations:
       required: true
 
   - type: textarea
-    id: details
+    id: use_cases
     attributes:
-      label: Details
+      label: Use Cases
       description: |
-        Use this section to include any additional information about the feature. If you have a proposal for how to implement this feature, please include it here.
-    validations:
-      required: true
-
-  - type: textarea
-    id: drawbacks
-    attributes:
-      label: "Drawbacks"
-      description: What are the drawbacks/impacts of your feature request?
-      placeholder: Identify the drawbacks and impacts while being neutral on your feature request
+        Detail different scenarios in which the new feature will be used. This should include how users will interact with the feature and how it fits into the overall functionality of Percy.
     validations:
       required: false
 
   - type: textarea
-    id: unresolved_question
+    id: acceptance_creteria
     attributes:
-      label: "Unresolved questions"
-      description: What questions still remain unresolved?
-      placeholder: Identify any unresolved issues.
+      label: Acceptance Criteria
+      description: |
+        Define the specific criteria that need to be met in order for the feature to be considered complete. This should include both functional and non-functional requirements, such as performance metrics and security requirements.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact_analysis
+    attributes:
+      label: Impact Analysis
+      description: |
+        Assess the potential impact of the new feature on existing code and functionality. This should include any potential conflicts or risks that need to be addressed.
     validations:
       required: false
