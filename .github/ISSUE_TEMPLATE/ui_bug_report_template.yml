@@ -8,17 +8,26 @@ body:
     validations:
       required: true
     attributes:
-      label: Describe the problem
+      label: Description
       description: |
         Describe the problem clearly here. Include descriptions of the expected behavior and the actual behavior.
 
   - type: textarea
     validations:
-      required: true
+      required: false
     attributes:
       label: Steps to reproduce the bug
       description: |
         **Record steps to reproduce the bug as a video or GIF** (to eliminate ambiguity) and attach it here.
+
+  - type: textarea
+    id: acceptance_creteria
+    attributes:
+      label: Acceptance Criteria
+      description: |
+        Define the specific criteria that need to be met in order for the feature to be considered complete. This should include both functional and non-functional requirements, such as performance metrics and security requirements.
+    validations:
+      required: true
 
   - type: textarea
     attributes:
