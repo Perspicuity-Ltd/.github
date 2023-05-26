@@ -1,0 +1,21 @@
+name: "Create HubSpot issue reference"
+description: Create a HubSpot issue reference.
+title: "<title>"
+labels: [
+  "bug"
+]
+body:
+  - type: input
+    id: hubspot_id
+    attributes:
+      label: HubSpot Ticket URL
+      description: "Please provide the URL of the corresponding HubSpot ticket"
+      placeholder: "https://app.hubspot.com/contacts/4465129/ticket/1644122532"
+
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Description
+      description: |
+        Describe the problem clearly here. Include descriptions of the expected behavior and the actual behavior.
