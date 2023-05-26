@@ -1,5 +1,5 @@
-name: "Create HubSpot issue reference"
-description: Create a HubSpot issue reference.
+name: "HubSpot issue"
+description: Create a reference to a HubSpot issue.
 title: "<title>"
 labels: [
   "bug"
