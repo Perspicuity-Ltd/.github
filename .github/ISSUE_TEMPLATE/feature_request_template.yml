@@ -1,6 +1,7 @@
 name: "Feature Request"
 description: Use this template for feature and enhancement proposals.
-title: "<title>"
+title: "[feat] "
+projects: ["Perspicuity-Ltd/6"]
 labels: [
   "enhancement"
 ]
