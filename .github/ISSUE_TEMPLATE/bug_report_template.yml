@@ -1,6 +1,7 @@
 name: "Report Bug"
 description: Create a report to help us reproduce and correct a bug.
-title: "<title>"
+title: "[bug] "
+projects: ["Perspicuity-Ltd/6"]
 labels: [
   "bug"
 ]
