@@ -1,6 +1,5 @@
 name: "HubSpot issue"
 description: Create a reference to a HubSpot issue.
-title: "[Bug] "
 projects: ["Perspicuity-Ltd/6"]
 labels: [
   "bug"
