@@ -7,7 +7,9 @@ body:
     attributes:
       label: User Story
       placeholder: |
-        As a <actor>, I want to <action>, So that <benefit>
+        As a <actor>, |
+        I want to <action>, |
+        So that <benefit>
     validations:
       required: true
       
