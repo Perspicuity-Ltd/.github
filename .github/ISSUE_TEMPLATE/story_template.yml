@@ -1,0 +1,21 @@
+name: "U"
+description: A brief summary of the user story.
+projects: ["Perspicuity-Ltd/6"]
+body:
+  - type: textarea
+    id: user_story
+    attributes:
+      label: User Story
+      placeholder: |
+        As a <actor>, I want to <action>, So that <benefit>
+    validations:
+      required: true
+      
+  - type: textarea
+    id: acceptance_creteria
+    attributes:
+      label: Acceptance Criteria
+      description: |
+        Define the specific criteria that need to be met in order for the feature to be considered complete. This should include both functional and non-functional requirements, such as performance metrics and security requirements.
+    validations:
+      required: true
