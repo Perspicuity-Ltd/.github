@@ -1,12 +1,12 @@
 name: "Feature"
-description: A brief summary of the epic's overarching goal.
+description: A brief summary of the feature's overarching goal.
 projects: ["Perspicuity-Ltd/6"]
 body:
   - type: textarea
     id: objective
     attributes:
       label: Objective
-      description: What is the main objective of this epic? What are we trying to achieve?
+      description: What is the main objective of this feature? What are we trying to achieve?
     validations:
       required: true
 
@@ -14,13 +14,13 @@ body:
     id: background_context
     attributes:
       label: Background/Context
-      description: Any relevant background information or context that led to the creation of this epic.
+      description: Any relevant background information or context that led to the creation of this feature.
 
   - type: textarea
     id: stakeholders
     attributes:
       label: Stakeholders
-      description: Who are the main stakeholders? Who will benefit from this epic?
+      description: Who are the main stakeholders? Who will benefit from this feature?
       
   - type: textarea
     id: acceptance_creteria
@@ -32,7 +32,7 @@ body:
     id: out_of_scope
     attributes:
       label: Out of Scope
-      description: What is not included in this epic?
+      description: What is not included in this feature?
 
   - type: textarea
     id: user_stories
