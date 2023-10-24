@@ -1,0 +1,41 @@
+name: "Feature"
+description: A brief summary of the epic's overarching goal.
+projects: ["Perspicuity-Ltd/6"]
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What is the main objective of this epic? What are we trying to achieve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: background_context
+    attributes:
+      label: Background/Context
+      description: Any relevant background information or context that led to the creation of this epic.
+
+  - type: textarea
+    id: background_context
+    attributes:
+      label: Stakeholders
+      description: Who are the main stakeholders? Who will benefit from this epic?
+      
+  - type: textarea
+    id: acceptance_creteria
+    attributes:
+      label: Acceptance Criteria
+      description: List the criteria that, when met, will signify that the user story is complete.
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of Scope
+      description: What is not included in this epic?
+
+  - type: textarea
+    id: user_stories
+    attributes:
+      label: User Stories
+      description: List of associated user stories. This can be updated as new user stories are created.
