@@ -1,0 +1,19 @@
+name: Task
+description: Create a report to help us reproduce and correct a UI bug.
+labels: ["bug"]
+projects: ["Perspicuity-Ltd/6"]
+body:
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Description
+      description: Provide a concise and clear summary of the task.
+        
+  - type: textarea
+    id: acceptance_creteria
+    attributes:
+      label: Acceptance Criteria
+      description: Specific conditions that must be met for the task to be considered complete.
+    validations:
+      required: true
