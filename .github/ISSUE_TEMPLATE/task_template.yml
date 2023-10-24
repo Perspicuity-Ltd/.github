@@ -1,6 +1,5 @@
 name: Task
-description: Create a report to help us reproduce and correct a UI bug.
-labels: ["bug"]
+description: A concise summary of the task detailing what needs to be done.
 projects: ["Perspicuity-Ltd/6"]
 body:
   - type: textarea
