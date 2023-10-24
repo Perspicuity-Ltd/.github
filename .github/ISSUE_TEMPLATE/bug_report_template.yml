@@ -1,4 +1,4 @@
-name: "Report Bug"
+name: "Bug"
 description: Create a report to help us reproduce and correct a bug.
 projects: ["Perspicuity-Ltd/6"]
 labels: [
@@ -10,31 +10,20 @@ body:
       required: true
     attributes:
       label: Description
-      description: |
-        Describe the problem clearly here. Include descriptions of the expected behavior and the actual behavior.
+      description: A detailed account of the issue, including what you observed versus what you expected to observe.
 
   - type: textarea
-    validations:
-      required: false
     attributes:
-      label: Steps to reproduce the bug
+      label: Steps to reproduce
       description: |
         **Record steps to reproduce the bug as a video or GIF** (to eliminate ambiguity) and attach it here.
 
   - type: textarea
-    id: acceptance_creteria
     attributes:
-      label: Acceptance Criteria
-      description: |
-        Define the specific criteria that need to be met in order for the feature to be considered complete. This should include both functional and non-functional requirements, such as performance metrics and security requirements.
-    validations:
-      required: true
+      label: Expected behaviour
+      description: Describe what you expected to happen when you followed the steps above.
 
   - type: textarea
-    id: logs
     attributes:
-      label: "Logs"
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: bash
-    validations:
-      required: false
+      label: Actual behaviour
+      description: Describe what actually happened instead.
