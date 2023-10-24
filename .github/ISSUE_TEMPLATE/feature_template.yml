@@ -1,6 +1,9 @@
 name: "Feature"
 description: A brief summary of the feature's overarching goal.
 projects: ["Perspicuity-Ltd/6"]
+labels: [
+  "feature"
+]
 body:
   - type: textarea
     id: objective
