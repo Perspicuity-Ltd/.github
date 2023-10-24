@@ -21,7 +21,3 @@ body:
       description: |
         Describe the problem clearly here. Include descriptions of the expected behavior and the actual behavior.
 
-  - type: textarea
-    attributes:
-      label: Tasks
-      
