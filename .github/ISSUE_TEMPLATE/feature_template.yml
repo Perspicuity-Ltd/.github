@@ -17,7 +17,7 @@ body:
       description: Any relevant background information or context that led to the creation of this epic.
 
   - type: textarea
-    id: background_context
+    id: stakeholders
     attributes:
       label: Stakeholders
       description: Who are the main stakeholders? Who will benefit from this epic?
