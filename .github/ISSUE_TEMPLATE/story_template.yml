@@ -7,8 +7,8 @@ body:
     attributes:
       label: User Story
       placeholder: |
-        As a <actor>, |
-        I want to <action>, |
+        As a <actor>,
+        I want to <action>,
         So that <benefit>
     validations:
       required: true
@@ -18,6 +18,6 @@ body:
     attributes:
       label: Acceptance Criteria
       description: |
-        Define the specific criteria that need to be met in order for the feature to be considered complete. This should include both functional and non-functional requirements, such as performance metrics and security requirements.
+        List the criteria that, when met, will signify that the user story is complete.
     validations:
       required: true
