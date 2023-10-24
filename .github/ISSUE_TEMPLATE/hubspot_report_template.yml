@@ -1,6 +1,7 @@
 name: "HubSpot issue"
 description: Create a reference to a HubSpot issue.
 projects: ["Perspicuity-Ltd/6"]
+title: "HubSpot ticket: "
 labels: [
   "bug"
 ]
@@ -19,3 +20,8 @@ body:
       label: Description
       description: |
         Describe the problem clearly here. Include descriptions of the expected behavior and the actual behavior.
+
+  - type: textarea
+    attributes:
+      label: Tasks
+      
