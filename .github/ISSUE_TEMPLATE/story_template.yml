@@ -2,7 +2,7 @@ name: "User Story"
 description: A brief summary of the user story.
 projects: ["Perspicuity-Ltd/6"]
 labels: [
-  "story"
+  "enhancement"
 ]
 body:
   - type: textarea
