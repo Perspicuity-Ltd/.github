@@ -11,6 +11,8 @@ body:
       label: Feature URL
       description: "Provide the URL of the parent feature"
       placeholder: "https://github.com/Perspicuity-Ltd/repo/issues/id"
+    validations:
+      required: true
 
   - type: textarea
     id: user_story
