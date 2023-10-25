@@ -5,6 +5,13 @@ labels: [
   "enhancement"
 ]
 body:
+  - type: input
+    id: feature_url
+    attributes:
+      label: Feature URL
+      description: "Provide the URL of the parent feature"
+      placeholder: "https://github.com/Perspicuity-Ltd/repo/issues/id"
+
   - type: textarea
     id: user_story
     attributes:
