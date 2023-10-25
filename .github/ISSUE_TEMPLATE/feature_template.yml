@@ -2,7 +2,7 @@ name: "Feature"
 description: A brief summary of the feature's overarching goal.
 projects: ["Perspicuity-Ltd/6"]
 labels: [
-  "feature"
+  "enhancement"
 ]
 body:
   - type: textarea
