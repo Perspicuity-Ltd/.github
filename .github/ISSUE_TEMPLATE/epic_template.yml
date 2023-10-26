@@ -38,7 +38,7 @@ body:
       description: Specify what is not included in this epic to set clear boundaries.
 
   - type: textarea
-    id: user_stories
+    id: features
     attributes:
-      label: User Stories
+      label: Features
       description: Provide a list or links to associated user stories or features that fall under this epic. This can be updated as new user stories or features are created.
