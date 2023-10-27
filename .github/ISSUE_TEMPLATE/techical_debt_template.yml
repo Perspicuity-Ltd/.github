@@ -37,11 +37,11 @@ body:
       description: |
         Describe the potential or current impact of this technical debt.
       placeholder: |
-        Slower development speed
-        Increased risk of bugs
-        Difficulty in adding new features
-        Security vulnerabilities
-        Increased onboarding time for new developers
+        - Slower development speed
+        - Increased risk of bugs
+        - Difficulty in adding new features
+        - Security vulnerabilities
+        - Increased onboarding time for new developers
 
   - type: textarea
     attributes:
