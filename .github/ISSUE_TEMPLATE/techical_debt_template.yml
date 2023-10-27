@@ -27,13 +27,13 @@ body:
 
   - type: textarea
     attributes:
-      label: If 'Other', please specify:
+      label: If 'Other', please specify
       description: |
         Provide a detailed description of the technical debt. Explain how it was introduced, if known.
 
   - type: textarea
     attributes:
-      label: Impact:
+      label: Impact
       description: |
         Describe the potential or current impact of this technical debt.
       placeholder: |
@@ -45,7 +45,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Proposed Solution:
+      label: Proposed Solution
       description: |
         Provide a brief overview of how this technical debt can be addressed.
   
@@ -61,7 +61,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Additional Notes:
+      label: Additional Notes
       description: |
         Any other relevant information or context about the technical debt.
   
