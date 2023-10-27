@@ -1,0 +1,67 @@
+name: "Technical Debt"
+description: A brief summary of the user story.
+projects: ["Perspicuity-Ltd/6"]
+labels: [
+  "maintenance", "technical-debt"
+]
+body:
+  - type: textarea
+    attributes:
+      label: Description
+      description: |
+        Provide a detailed description of the technical debt. Explain how it was introduced, if known.
+    validations:
+      required: true
+      
+  - type: checkboxes
+    attributes:
+      label: Reason for the debt
+      description: You may select more than one.
+      options:
+        - label: Quick fix that needs a proper solution
+        - label: Outdated libraries or dependencies
+        - label: Deprecated methods or practices
+        - label: Code that's hard to read or understand
+        - label: Lack of documentation
+        - label: Other
+
+  - type: textarea
+    attributes:
+      label: Other (please specify):
+      description: |
+        Provide a detailed description of the technical debt. Explain how it was introduced, if known.
+
+  - type: textarea
+    attributes:
+      label: Impact:
+      description: |
+        Describe the potential or current impact of this technical debt.
+      placeholder: |
+        Slower development speed
+        Increased risk of bugs
+        Difficulty in adding new features
+        Security vulnerabilities
+        Increased onboarding time for new developers
+
+  - type: textarea
+    attributes:
+      label: Proposed Solution:
+      description: |
+        Provide a brief overview of how this technical debt can be addressed.
+  
+  - type: dropdown
+    attributes:
+      label: Estimated Effort to Resolve
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional Notes:
+      description: |
+        Any other relevant information or context about the technical debt.
+  
