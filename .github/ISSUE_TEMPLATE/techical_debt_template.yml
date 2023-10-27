@@ -1,5 +1,5 @@
 name: "Technical Debt"
-description: A brief summary of the user story.
+description: Log a technical debt
 projects: ["Perspicuity-Ltd/6"]
 labels: [
   "maintenance", "technical-debt"
@@ -45,13 +45,13 @@ body:
 
   - type: textarea
     attributes:
-      label: Proposed Solution
+      label: Proposed solution
       description: |
         Provide a brief overview of how this technical debt can be addressed.
   
   - type: dropdown
     attributes:
-      label: Estimated Effort to Resolve
+      label: Estimated effort to resolve
       options:
         - Low
         - Medium
@@ -61,7 +61,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Additional Notes
+      label: Additional notes
       description: |
         Any other relevant information or context about the technical debt.
   
