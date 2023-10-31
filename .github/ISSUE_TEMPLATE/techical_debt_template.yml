@@ -2,7 +2,7 @@ name: "Technical Debt"
 description: Log a technical debt
 projects: ["Perspicuity-Ltd/6"]
 labels: [
-  "maintenance", "technical-debt"
+  "technical-debt"
 ]
 body:
   - type: textarea
