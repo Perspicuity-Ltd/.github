@@ -2,7 +2,7 @@ name: Task
 description: A concise summary of the task detailing what needs to be done.
 projects: ["Perspicuity-Ltd/6"]
 labels: [
-  "enhancement"
+  "task"
 ]
 body:
   - type: textarea
