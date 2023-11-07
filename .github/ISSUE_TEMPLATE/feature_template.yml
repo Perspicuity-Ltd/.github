@@ -1,15 +1,20 @@
-name: "Feature"
-description: A brief summary of the feature's overarching goal.
+name: Feature Request
+description: Template for proposing new features.
 projects: ["Perspicuity-Ltd/6"]
 labels: [
   "feature"
 ]
 body:
-  - type: textarea
-    id: objective
+  - type: markdown
     attributes:
-      label: Objective
-      description: What is the main objective of this feature? What are we trying to achieve?
+      value: "## Feature Request Template\nThis template is designed to capture the details of proposed enhancements and new features."
+      
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: "A detailed description of the feature."
+      placeholder: "Describe the feature and the value it adds..."
     validations:
       required: true
 
@@ -24,21 +29,82 @@ body:
     attributes:
       label: Stakeholders
       description: Who are the main stakeholders? Who will benefit from this feature?
-      
+  
   - type: textarea
-    id: acceptance_creteria
-    attributes:
-      label: Acceptance Criteria
-      description: List the criteria that, when met, will signify that the user story is complete.
-
-  - type: textarea
-    id: out_of_scope
-    attributes:
-      label: Out of Scope
-      description: What is not included in this feature?
-
-  - type: textarea
-    id: user_stories
+    id: user-stories
     attributes:
       label: User Stories
-      description: List of associated user stories. This can be updated as new user stories are created.
+      description: "If applicable, provide user stories to give context on how the feature will be used."
+      placeholder: "As a [type of user], I want [an action or feature] so that [benefit/value]."
+      render: markdown
+    validations:
+      required: false
+      
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: "Criteria that must be met for the feature to be considered complete."
+      placeholder: "- Criterion 1: [Description]\n- Criterion 2: [Description]\n- Criterion 3: [Description]\n- ..."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: "Any additional information, context, or related issues."
+      placeholder: "- Note 1: [Information]\n- Note 2: [Information]\n- ..."
+      render: markdown
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: feature-type
+    attributes:
+      label: Feature Type
+      description: "Please select the type of feature this is."
+      options:
+        - label: New Functionality
+          required: false
+        - label: Improvement
+          required: false
+        - label: Performance Enhancement
+          required: false
+        - label: UI/UX
+          required: false
+        - label: Integration
+          required: false
+          
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: "The priority of this feature."
+      options:
+        - Low
+        - Medium
+        - High
+        - Urgent
+    validations:
+      required: true
+      
+  - type: input
+    id: due-date
+    attributes:
+      label: Target Date
+      description: "If applicable, specify the target date for the feature completion."
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
+      
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Attachments
+      description: "Links to any relevant documents, diagrams, or mock-ups."
+      placeholder: "[Link 1], [Link 2], [Link 3]"
+      render: markdown
+    validations:
+      required: false
