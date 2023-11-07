@@ -1,29 +1,69 @@
 name: "Bug"
-description: Create a report to help us reproduce and correct a bug.
+description: Template for reporting bugs.
 projects: ["Perspicuity-Ltd/6"]
 labels: [
   "bug"
 ]
 body:
+  - type: markdown
+    attributes:
+      value: "## Bug Report Template\nThis template is designed to capture the necessary details to report a bug effectively."
+      
   - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: "A detailed description of the bug."
+      placeholder: "Describe the bug in detail..."
     validations:
       required: true
+      
+  - type: textarea
+    id: steps-to-reproduce
     attributes:
-      label: Description
-      description: A detailed account of the issue, including what you observed versus what you expected to observe.
+      label: Steps to Reproduce
+      description: "Steps to reproduce the behavior:"
+      placeholder: "1. Go to '...'\n2. Click on '....'\n3. Scroll down to '....'\n4. See error"
+      render: markdown
+    validations:
+      required: true
+      
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: "A clear and concise description of what you expected to happen."
+      placeholder: "Explain what you expected to happen when following the steps above."
+      render: markdown
+    validations:
+      required: true
+      
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: "A clear and concise description of what actually happened."
+      placeholder: "Describe what actually happened instead of the expected behavior."
+      render: markdown
+    validations:
+      required: true
+      
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: "If applicable, add screenshots to help explain your problem."
+      placeholder: "Attach images or drop them here."
+      render: markdown
+    validations:
+      required: false
 
   - type: textarea
+    id: additional-context
     attributes:
-      label: Steps to reproduce
-      description: |
-        **Record steps to reproduce the bug as a video or GIF** (to eliminate ambiguity) and attach it here.
-
-  - type: textarea
-    attributes:
-      label: Expected behaviour
-      description: Describe what you expected to happen when you followed the steps above.
-
-  - type: textarea
-    attributes:
-      label: Actual behaviour
-      description: Describe what actually happened instead.
+      label: Additional Context
+      description: "Any other context about the problem, such as logs, code snippets, or links to relevant resources."
+      placeholder: "Add any other context about the problem here."
+      render: markdown
+    validations:
+      required: false
