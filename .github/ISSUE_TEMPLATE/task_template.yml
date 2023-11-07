@@ -46,15 +46,6 @@ body:
     validations:
       required: true
       
-  - type: input
-    id: due-date
-    attributes:
-      label: Due Date
-      description: "The expected completion date for this task."
-      placeholder: "YYYY-MM-DD"
-    validations:
-      required: false
-      
   - type: textarea
     id: acceptance-criteria
     attributes:
