@@ -19,6 +19,10 @@ body:
         - Technical Story
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: "### User Story\nIf you are submitting a user story, please fill out the following section."
       
   - type: textarea
     id: user-story
@@ -30,15 +34,13 @@ body:
     validations:
       required: false
       
-  - type: textarea
-    id: acceptance-criteria-user
+  - type: markdown
     attributes:
-      label: Acceptance Criteria
-      description: "List the criteria to meet to consider this user story complete."
-      placeholder: "- Criterion 1: [Description]\n- Criterion 2: [Description]\n- Criterion 3: [Description]\n- ..."
-      render: markdown
-    validations:
-      required: false
+      value: "---" # This horizontal rule serves as a visual separator
+
+  - type: markdown
+    attributes:
+      value: "### Technical Story\nIf you are submitting a technical story, please fill out the following section."
       
   - type: textarea
     id: technical-story
@@ -49,6 +51,10 @@ body:
       render: markdown
     validations:
       required: false
+
+  - type: markdown
+    attributes:
+      value: "---" # Another horizontal rule to separate from the common sections
       
   - type: textarea
     id: acceptance-criteria-technical
