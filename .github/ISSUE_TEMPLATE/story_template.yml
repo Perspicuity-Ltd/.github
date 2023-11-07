@@ -22,8 +22,8 @@ body:
 
   - type: markdown
     attributes:
-      value: "### User Story\nIf you are submitting a user story, please fill out the following section."
-
+      value: "---"
+      
   - type: textarea
     id: user-story
     attributes:
@@ -36,10 +36,6 @@ body:
   - type: markdown
     attributes:
       value: "---"
-
-  - type: markdown
-    attributes:
-      value: "### Technical Story\nIf you are submitting a technical story, please fill out the following section."
 
   - type: textarea
     id: technical-story
