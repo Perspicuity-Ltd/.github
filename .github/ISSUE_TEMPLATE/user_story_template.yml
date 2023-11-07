@@ -1,5 +1,5 @@
-name: "Story"
-description: This template is designed to capture the requirements for both user-facing and technical work.
+name: User Story
+description: Template for creating user stories.
 projects: ["Perspicuity-Ltd/6"]
 labels: [
   "story"
