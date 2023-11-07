@@ -5,17 +5,6 @@ labels: [
   "task"
 ]
 body:
-  - type: markdown
-    attributes:
-      value: "## Task Template\nThis template is designed to capture the requirements for tasks that need to be completed."
-  - type: input
-    id: title
-    attributes:
-      label: Title
-      description: "A concise title for the task."
-      placeholder: "Enter the task title"
-    validations:
-      required: true
   - type: textarea
     id: task-description
     attributes:
