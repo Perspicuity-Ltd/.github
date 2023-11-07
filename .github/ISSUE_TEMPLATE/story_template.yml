@@ -23,65 +23,51 @@ body:
   - type: markdown
     attributes:
       value: "### User Story\nIf you are submitting a user story, please fill out the following section."
-      
+
   - type: textarea
     id: user-story
     attributes:
-      label: For User Stories
-      description: "Fill out if this is a user story."
+      label: User Story
+      description: "Format: As a [type of user], I want [an action or feature] so that [benefit/value]."
       placeholder: "As a [type of user], I want [an action or feature] so that [benefit/value]."
-      render: markdown
     validations:
       required: false
-      
+
   - type: markdown
     attributes:
-      value: "---" # This horizontal rule serves as a visual separator
+      value: "---"
 
   - type: markdown
     attributes:
       value: "### Technical Story\nIf you are submitting a technical story, please fill out the following section."
-      
+
   - type: textarea
     id: technical-story
     attributes:
-      label: For Technical Stories
-      description: "Fill out if this is a technical story."
+      label: Technical Story
+      description: "Describe the technical objective and requirements."
       placeholder: "Objective: [Clear, concise statement of the goal]\n\nTechnical Requirements:\n- Requirement 1: [Description]\n- Requirement 2: [Description]\n- Requirement 3: [Description]\n- ...\n\nRationale: [Explanation of how this supports the system, architecture, or future development]"
-      render: markdown
     validations:
       required: false
 
   - type: markdown
     attributes:
-      value: "---" # Another horizontal rule to separate from the common sections
+      value: "---"
       
   - type: textarea
-    id: acceptance-criteria-technical
+    id: acceptance-criteria
     attributes:
       label: Acceptance Criteria
-      description: "List the criteria to meet to consider this technical story complete."
-      placeholder: "- Criterion 1: [Technical requirement or condition that must be met]\n- Criterion 2: [Technical requirement or condition that must be met]\n- Criterion 3: [Technical requirement or condition that must be met]\n- ..."
-      render: markdown
+      description: "List the criteria to meet to consider this story complete."
+      placeholder: "- Criterion 1: [Description]\n- Criterion 2: [Description]\n- Criterion 3: [Description]\n- ..."
     validations:
-      required: false
-      
+      required: true
+
   - type: textarea
     id: additional-notes
     attributes:
       label: Additional Notes
       description: "Add any additional notes, information, or context for the story here."
       placeholder: "- Note 1: [Information]\n- Note 2: [Information]\n- ..."
-      render: markdown
-    validations:
-      required: false
-      
-  - type: textarea
-    id: attachments
-    attributes:
-      label: Attachments
-      description: "Links to any relevant documents, diagrams, or mock-ups."
-      placeholder: "[Link 1], [Link 2], [Link 3]"
-      render: markdown
     validations:
       required: false
