@@ -1,26 +1,90 @@
-name: "User Story"
-description: A brief summary of the user story.
+name: "Story"
+description: This template is designed to capture the requirements for both user-facing and technical work.
 projects: ["Perspicuity-Ltd/6"]
 labels: [
   "story"
 ]
 body:
-  - type: textarea
-    id: user_story
+  - type: markdown
     attributes:
-      label: User Story
-      placeholder: |
-        As a <actor>,
-        I want to <action>,
-        So that <benefit>
+      value: "## User Story and Technical Story Template\nThis template is designed to capture the requirements for both user-facing and technical work. Please select the appropriate type of story and fill in the details accordingly."
+  
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: "One-line story summary"
+      placeholder: "As a [user], I want [feature] so that [benefit]."
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: story-type
+    attributes:
+      label: Type
+      description: "Select the type of story."
+      options:
+        - User Story
+        - Technical Story
     validations:
       required: true
       
   - type: textarea
-    id: acceptance_creteria
+    id: user-story
+    attributes:
+      label: For User Stories
+      description: "Fill out if this is a user story."
+      placeholder: "As a [type of user], I want [an action or feature] so that [benefit/value]."
+      render: markdown
+    validations:
+      required: false
+      
+  - type: textarea
+    id: acceptance-criteria-user
     attributes:
       label: Acceptance Criteria
-      description: |
-        List the criteria that, when met, will signify that the user story is complete.
+      description: "List the criteria to meet to consider this user story complete."
+      placeholder: "- Criterion 1: [Description]\n- Criterion 2: [Description]\n- Criterion 3: [Description]\n- ..."
+      render: markdown
     validations:
-      required: true
+      required: false
+      
+  - type: textarea
+    id: technical-story
+    attributes:
+      label: For Technical Stories
+      description: "Fill out if this is a technical story."
+      placeholder: "Objective: [Clear, concise statement of the goal]\n\nTechnical Requirements:\n- Requirement 1: [Description]\n- Requirement 2: [Description]\n- Requirement 3: [Description]\n- ...\n\nRationale: [Explanation of how this supports the system, architecture, or future development]"
+      render: markdown
+    validations:
+      required: false
+      
+  - type: textarea
+    id: acceptance-criteria-technical
+    attributes:
+      label: Acceptance Criteria
+      description: "List the criteria to meet to consider this technical story complete."
+      placeholder: "- Criterion 1: [Technical requirement or condition that must be met]\n- Criterion 2: [Technical requirement or condition that must be met]\n- Criterion 3: [Technical requirement or condition that must be met]\n- ..."
+      render: markdown
+    validations:
+      required: false
+      
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: "Add any additional notes, information, or context for the story here."
+      placeholder: "- Note 1: [Information]\n- Note 2: [Information]\n- ..."
+      render: markdown
+    validations:
+      required: false
+      
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Attachments
+      description: "Links to any relevant documents, diagrams, or mock-ups."
+      placeholder: "[Link 1], [Link 2], [Link 3]"
+      render: markdown
+    validations:
+      required: false
