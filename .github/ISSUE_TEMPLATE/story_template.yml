@@ -9,15 +9,6 @@ body:
     attributes:
       value: "## User Story and Technical Story Template\nThis template is designed to capture the requirements for both user-facing and technical work. Please select the appropriate type of story and fill in the details accordingly."
   
-  - type: input
-    id: title
-    attributes:
-      label: Title
-      description: "One-line story summary"
-      placeholder: "As a [user], I want [feature] so that [benefit]."
-    validations:
-      required: true
-  
   - type: dropdown
     id: story-type
     attributes:
