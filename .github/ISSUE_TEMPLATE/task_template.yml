@@ -13,24 +13,7 @@ body:
       placeholder: "Describe the task in detail..."
     validations:
       required: true
-  - type: textarea
-    id: acceptance-criteria
-    attributes:
-      label: Acceptance Criteria
-      description: "Criteria that must be met for the task to be considered complete."
-      placeholder: "- Criterion 1: [Description]\n- Criterion 2: [Description]\n- Criterion 3: [Description]\n- ..."
-      render: markdown
-    validations:
-      required: true
-  - type: textarea
-    id: additional-notes
-    attributes:
-      label: Additional Notes
-      description: "Any additional information, context, or related issues."
-      placeholder: "- Note 1: [Information]\n- Note 2: [Information]\n- ..."
-      render: markdown
-    validations:
-      required: false
+
   - type: checkboxes
     id: task-type
     attributes:
@@ -49,6 +32,7 @@ body:
           required: false
         - label: Testing
           required: false
+          
   - type: dropdown
     id: priority
     attributes:
@@ -61,6 +45,7 @@ body:
         - Urgent
     validations:
       required: true
+      
   - type: input
     id: due-date
     attributes:
@@ -69,6 +54,27 @@ body:
       placeholder: "YYYY-MM-DD"
     validations:
       required: false
+      
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: "Criteria that must be met for the task to be considered complete."
+      placeholder: "- Criterion 1: [Description]\n- Criterion 2: [Description]\n- Criterion 3: [Description]\n- ..."
+      render: markdown
+    validations:
+      required: true
+      
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: "Any additional information, context, or related issues."
+      placeholder: "- Note 1: [Information]\n- Note 2: [Information]\n- ..."
+      render: markdown
+    validations:
+      required: false
+      
   - type: textarea
     id: attachments
     attributes:
