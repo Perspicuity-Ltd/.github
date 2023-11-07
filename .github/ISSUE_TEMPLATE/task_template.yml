@@ -1,21 +1,91 @@
 name: Task
-description: A concise summary of the task detailing what needs to be done.
+description: Template for creating tasks.
 projects: ["Perspicuity-Ltd/6"]
 labels: [
   "task"
 ]
 body:
-  - type: textarea
+  - type: markdown
+    attributes:
+      value: "## Task Template\nThis template is designed to capture the requirements for tasks that need to be completed."
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: "A concise title for the task."
+      placeholder: "Enter the task title"
     validations:
       required: true
-    attributes:
-      label: Description
-      description: Provide a concise and clear summary of the task.
-        
   - type: textarea
-    id: acceptance_creteria
+    id: task-description
+    attributes:
+      label: Task Description
+      description: "A detailed description of the task."
+      placeholder: "Describe the task in detail..."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
     attributes:
       label: Acceptance Criteria
-      description: Specific conditions that must be met for the task to be considered complete.
+      description: "Criteria that must be met for the task to be considered complete."
+      placeholder: "- Criterion 1: [Description]\n- Criterion 2: [Description]\n- Criterion 3: [Description]\n- ..."
+      render: markdown
     validations:
       required: true
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: "Any additional information, context, or related issues."
+      placeholder: "- Note 1: [Information]\n- Note 2: [Information]\n- ..."
+      render: markdown
+    validations:
+      required: false
+  - type: checkboxes
+    id: task-type
+    attributes:
+      label: Task Type
+      description: "Please select the type of task this is."
+      options:
+        - label: Documentation
+          required: false
+        - label: Refactoring
+          required: false
+        - label: Feature Work
+          required: false
+        - label: Bug Fix
+          required: false
+        - label: Research
+          required: false
+        - label: Testing
+          required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: "The priority of this task."
+      options:
+        - Low
+        - Medium
+        - High
+        - Urgent
+    validations:
+      required: true
+  - type: input
+    id: due-date
+    attributes:
+      label: Due Date
+      description: "The expected completion date for this task."
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Attachments
+      description: "Links to any relevant documents, diagrams, or mock-ups."
+      placeholder: "[Link 1], [Link 2], [Link 3]"
+      render: markdown
+    validations:
+      required: false
