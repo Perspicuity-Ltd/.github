@@ -1,6 +1,5 @@
 name: Technical Story
 description: Template for creating technical stories.
-title: ""
 projects: ["Perspicuity-Ltd/6"]
 labels: [
   "story"
