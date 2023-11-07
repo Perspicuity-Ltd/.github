@@ -5,14 +5,6 @@ labels: [
   "story"
 ]
 body:
-  - type: markdown
-    attributes:
-      value: "## User Story and Technical Story Template\nThis template is designed to capture the requirements for both user-facing and technical work. Please select the appropriate type of story and fill in the details accordingly."
-
-  - type: markdown
-    attributes:
-      value: "---"
-      
   - type: textarea
     id: user-story
     attributes:
@@ -21,23 +13,6 @@ body:
       placeholder: "As a [type of user], I want [an action or feature] so that [benefit/value]."
     validations:
       required: false
-
-  - type: markdown
-    attributes:
-      value: "---"
-
-  - type: textarea
-    id: technical-story
-    attributes:
-      label: Technical Story
-      description: "Describe the technical objective and requirements."
-      placeholder: "Objective: [Clear, concise statement of the goal]\n\nTechnical Requirements:\n- Requirement 1: [Description]\n- Requirement 2: [Description]\n- Requirement 3: [Description]\n- ...\n\nRationale: [Explanation of how this supports the system, architecture, or future development]"
-    validations:
-      required: false
-
-  - type: markdown
-    attributes:
-      value: "---"
       
   - type: textarea
     id: acceptance-criteria
