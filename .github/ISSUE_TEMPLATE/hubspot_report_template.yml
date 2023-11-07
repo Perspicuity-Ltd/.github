@@ -1,7 +1,7 @@
-name: "HubSpot issue"
-description: Create a reference to a HubSpot issue.
+name: "HubSpot Issue Link"
+description: Create a reference to a HubSpot issue for tracking and resolution.
 projects: ["Perspicuity-Ltd/6"]
-title: "HubSpot <ticket-number>: <title>"
+title: "HubSpot {{ hubspot_id }}: {{ title }}"
 labels: [
   "bug"
 ]
@@ -9,15 +9,44 @@ body:
   - type: input
     id: hubspot_id
     attributes:
-      label: HubSpot Ticket URL
-      description: "Please provide the URL of the corresponding HubSpot ticket"
-      placeholder: "https://app.hubspot.com/contacts/4465129/ticket/1644122532"
-
-  - type: textarea
+      label: HubSpot Ticket ID
+      description: "Enter the HubSpot ticket number (found in the ticket URL)."
+      placeholder: "e.g., 1644122532"
     validations:
       required: true
-    attributes:
-      label: Description
-      description: |
-        Describe the problem clearly here. Include descriptions of the expected behavior and the actual behavior.
 
+  - type: input
+    id: hubspot_url
+    attributes:
+      label: HubSpot Ticket URL
+      description: "Provide the full URL of the corresponding HubSpot ticket."
+      placeholder: "https://app.hubspot.com/contacts/4465129/ticket/1644122532"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Issue Description
+      description: "Describe the problem clearly. Include descriptions of the expected and actual behavior."
+      placeholder: "A clear and concise description of what the bug is..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: "If applicable, list the steps to reproduce the behavior:"
+      placeholder: "1. Go to '...'\n2. Click on '....'\n3. Scroll down to '....'\n4. See error"
+    validations:
+      required: false
+
+  - type: textarea
+    id: internal_notes
+    attributes:
+      label: Internal Notes
+      description: "Any notes for internal use; not to be shared with the customer."
+      placeholder: "Notes for the team, including any discussion points, internal references, etc..."
+    validations:
+      required: false
