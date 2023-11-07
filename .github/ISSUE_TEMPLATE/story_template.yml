@@ -8,17 +8,6 @@ body:
   - type: markdown
     attributes:
       value: "## User Story and Technical Story Template\nThis template is designed to capture the requirements for both user-facing and technical work. Please select the appropriate type of story and fill in the details accordingly."
-  
-  - type: dropdown
-    id: story-type
-    attributes:
-      label: Type
-      description: "Select the type of story."
-      options:
-        - User Story
-        - Technical Story
-    validations:
-      required: true
 
   - type: markdown
     attributes:
