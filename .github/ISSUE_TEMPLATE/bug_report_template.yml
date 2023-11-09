@@ -5,10 +5,6 @@ labels: [
   "bug"
 ]
 body:
-  - type: markdown
-    attributes:
-      value: "## Bug Report Template\nThis template is designed to capture the necessary details to report a bug effectively."
-      
   - type: textarea
     id: bug-description
     attributes:
@@ -24,7 +20,6 @@ body:
       label: Steps to Reproduce
       description: "Steps to reproduce the behavior:"
       placeholder: "1. Go to '...'\n2. Click on '....'\n3. Scroll down to '....'\n4. See error"
-      render: markdown
     validations:
       required: true
       
@@ -34,7 +29,6 @@ body:
       label: Expected Behavior
       description: "A clear and concise description of what you expected to happen."
       placeholder: "Explain what you expected to happen when following the steps above."
-      render: markdown
     validations:
       required: true
       
@@ -44,7 +38,6 @@ body:
       label: Actual Behavior
       description: "A clear and concise description of what actually happened."
       placeholder: "Describe what actually happened instead of the expected behavior."
-      render: markdown
     validations:
       required: true
       
@@ -54,7 +47,6 @@ body:
       label: Screenshots
       description: "If applicable, add screenshots to help explain your problem."
       placeholder: "Attach images or drop them here."
-      render: markdown
     validations:
       required: false
 
@@ -64,6 +56,5 @@ body:
       label: Additional Context
       description: "Any other context about the problem, such as logs, code snippets, or links to relevant resources."
       placeholder: "Add any other context about the problem here."
-      render: markdown
     validations:
       required: false
