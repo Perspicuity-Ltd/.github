@@ -30,8 +30,6 @@ body:
       label: Rationale
       description: "Why is this work important? How does it support the system, architecture, or future development?"
       placeholder: "Explain the importance of this work and how it contributes to the overall system or objectives."
-    validations:
-      required: true
 
   - type: textarea
     id: acceptance-criteria
