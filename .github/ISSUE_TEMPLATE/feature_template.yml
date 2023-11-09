@@ -5,9 +5,6 @@ labels: [
   "feature"
 ]
 body:
-  - type: markdown
-    attributes:
-      value: "## Feature Request Template\nThis template is designed to capture the details of proposed enhancements and new features."
       
   - type: textarea
     id: feature-description
