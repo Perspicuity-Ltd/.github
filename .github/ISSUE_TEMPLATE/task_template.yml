@@ -52,7 +52,6 @@ body:
       label: Acceptance Criteria
       description: "Criteria that must be met for the task to be considered complete."
       placeholder: "- Criterion 1: [Description]\n- Criterion 2: [Description]\n- Criterion 3: [Description]\n- ..."
-      render: markdown
     validations:
       required: true
       
@@ -62,7 +61,6 @@ body:
       label: Additional Notes
       description: "Any additional information, context, or related issues."
       placeholder: "- Note 1: [Information]\n- Note 2: [Information]\n- ..."
-      render: markdown
     validations:
       required: false
       
@@ -72,6 +70,5 @@ body:
       label: Attachments
       description: "Links to any relevant documents, diagrams, or mock-ups."
       placeholder: "[Link 1], [Link 2], [Link 3]"
-      render: markdown
     validations:
       required: false
