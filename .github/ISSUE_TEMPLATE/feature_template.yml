@@ -9,7 +9,7 @@ body:
   - type: textarea
     id: feature-description
     attributes:
-      label: Feature Description
+      label: Description
       description: "A detailed description of the feature."
       placeholder: "Describe the feature and the value it adds..."
     validations:
