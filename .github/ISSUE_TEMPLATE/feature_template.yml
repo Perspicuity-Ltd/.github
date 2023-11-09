@@ -84,15 +84,6 @@ body:
     validations:
       required: true
       
-  - type: input
-    id: due-date
-    attributes:
-      label: Target Date
-      description: "If applicable, specify the target date for the feature completion."
-      placeholder: "YYYY-MM-DD"
-    validations:
-      required: false
-      
   - type: textarea
     id: attachments
     attributes:
