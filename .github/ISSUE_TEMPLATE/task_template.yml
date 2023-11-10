@@ -32,6 +32,8 @@ body:
           required: false
         - label: Testing
           required: false
+        - label: Other
+          required: false
           
   - type: dropdown
     id: priority
