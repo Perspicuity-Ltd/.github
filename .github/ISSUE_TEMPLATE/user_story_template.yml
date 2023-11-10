@@ -6,13 +6,11 @@ labels: [
 ]
 body:
   - type: textarea
-    id: user-story
+    id: story
     attributes:
-      label: User Story
+      label: Story/Objective
       description: "Format: As a [type of user], I want [an action or feature] so that [benefit/value]."
       placeholder: "As a [type of user], I want [an action or feature] so that [benefit/value]."
-    validations:
-      required: false
       
   - type: textarea
     id: acceptance-criteria
@@ -29,5 +27,3 @@ body:
       label: Additional Notes
       description: "Add any additional notes, information, or context for the story here."
       placeholder: "- Note 1: [Information]\n- Note 2: [Information]\n- ..."
-    validations:
-      required: false
