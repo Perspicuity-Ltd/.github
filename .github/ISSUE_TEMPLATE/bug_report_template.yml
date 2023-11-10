@@ -20,8 +20,6 @@ body:
       label: Steps to Reproduce
       description: "Steps to reproduce the behaviour:"
       placeholder: "1. Go to '...'\n2. Click on '....'\n3. Scroll down to '....'\n4. See error"
-    validations:
-      required: true
       
   - type: textarea
     id: expected-behaviour
@@ -29,8 +27,6 @@ body:
       label: Expected Behaviour
       description: "A clear and concise description of what you expected to happen."
       placeholder: "Explain what you expected to happen when following the steps above."
-    validations:
-      required: true
       
   - type: textarea
     id: actual-behaviour
@@ -38,8 +34,6 @@ body:
       label: Actual Behaviour
       description: "A clear and concise description of what actually happened."
       placeholder: "Describe what actually happened instead of the expected behaviour."
-    validations:
-      required: true
       
   - type: textarea
     id: screenshots
@@ -47,8 +41,6 @@ body:
       label: Screenshots
       description: "If applicable, add screenshots to help explain your problem."
       placeholder: "Attach images or drop them here."
-    validations:
-      required: false
 
   - type: textarea
     id: additional-context
@@ -56,5 +48,3 @@ body:
       label: Additional Context
       description: "Any other context about the problem, such as logs, code snippets, or links to relevant resources."
       placeholder: "Add any other context about the problem here."
-    validations:
-      required: false
