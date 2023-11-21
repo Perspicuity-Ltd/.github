@@ -4,7 +4,7 @@ Before submitting this pull request, ensure you have followed our [Pull Request 
 - Brief description of changes.
 
 ### Implementation
-- Key details of your approach (for significant changes).
+- Key details of your approach (for significant changes). For visual changes add a screenshot or a gif.
 
 ## Checklist
 - [ ] Code builds without errors.
