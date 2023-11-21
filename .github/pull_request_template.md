@@ -1,21 +1,23 @@
-# Description
-Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
+Before submitting this pull request, ensure you have followed our [Pull Request Guidelines](https://developer.perspicuity.co.uk/life-as-a-developer/pull-request-guidelines). This template helps you provide the necessary information for an efficient review process.
 
-Closes # (issue)
+## Overview
+- Brief description of changes.
 
-## Type of change
-Please delete options that are not relevant.
+### Implementation
+- Key details of your approach (for significant changes).
 
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] This change requires a documentation update
+## Checklist
+- [ ] Code builds without errors.
+- [ ] Self-reviewed my code.
+- [ ] Code has been peer-reviewed.
+- [ ] Comments in complex areas.
+- [ ] Updated documentation.
+- [ ] Added/updated tests.
+- [ ] All tests pass locally.
 
-## Before submitting this PR, please make sure:
-- [ ] You've followed our [pull request guidelines](https://developer.perspicuity.co.uk/life-as-a-developer/pull-request-guidelines)
-- [ ] Your code builds clean without any errors or warnings
-- [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
-- [ ] I have added tests that prove my fix is effective or that my feature works
-- [ ] New and existing unit tests pass locally with my changes
+## Closing
+- Closes # (issue number)
+
+## Notes
+- Any additional information for reviewers.
+- List any new dependencies.
