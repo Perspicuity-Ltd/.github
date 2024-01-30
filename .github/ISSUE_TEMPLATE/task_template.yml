@@ -1,9 +1,6 @@
 name: Task
 description: Template for creating tasks.
 projects: ["Perspicuity-Ltd/6"]
-labels: [
-  "task"
-]
 body:
   - type: textarea
     id: task-description
@@ -44,7 +41,6 @@ body:
         - Low
         - Medium
         - High
-        - Urgent
     validations:
       required: true
       
