@@ -1,5 +1,5 @@
-name: Task
-description: Template for creating tasks.
+name: Issue
+description: Template for creating new issues.
 projects: ["Perspicuity-Ltd/6"]
 body:
   - type: textarea
