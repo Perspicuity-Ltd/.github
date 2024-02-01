@@ -10,39 +10,6 @@ body:
       placeholder: "Describe the task in detail..."
     validations:
       required: true
-
-  - type: checkboxes
-    id: task-type
-    attributes:
-      label: Task Type
-      description: "Please select the type of task this is."
-      options:
-        - label: Documentation
-          required: false
-        - label: Refactoring
-          required: false
-        - label: Feature Work
-          required: false
-        - label: Bug Fix
-          required: false
-        - label: Research
-          required: false
-        - label: Testing
-          required: false
-        - label: Other
-          required: false
-          
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      description: "The priority of this task."
-      options:
-        - Low
-        - Medium
-        - High
-    validations:
-      required: true
       
   - type: textarea
     id: acceptance-criteria
