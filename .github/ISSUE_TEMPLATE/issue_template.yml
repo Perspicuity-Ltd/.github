@@ -16,7 +16,7 @@ body:
     attributes:
       label: Acceptance Criteria
       description: "Criteria that must be met for the task to be considered complete."
-      placeholder: "- Criterion 1: [Description]\n- Criterion 2: [Description]\n- Criterion 3: [Description]\n- ..."
+      placeholder: "- Criterion 1: [Description]\n- Criterion 2: [Description]\n- ..."
       
   - type: textarea
     id: additional-notes
