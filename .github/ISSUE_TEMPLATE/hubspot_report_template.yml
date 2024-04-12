@@ -1,6 +1,6 @@
 name: "HubSpot Issue Link"
 description: Create a reference to a HubSpot issue for tracking and resolution.
-projects: ["Perspicuity-Ltd/6"]
+projects: ["Perspicuity-Ltd/19"]
 title: "HubSpot {{hubspot_id}}: {{title}}"
 labels: [
   "bug"
