@@ -1,6 +1,6 @@
 name: Issue
 description: Template for creating new issues.
-projects: ["Perspicuity-Ltd/6"]
+projects: ["Perspicuity-Ltd/19"]
 body:
   - type: textarea
     id: task-description
