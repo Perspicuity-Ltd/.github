@@ -19,13 +19,6 @@ body:
       placeholder: "- Criterion 1: [Description]\n- Criterion 2: [Description]\n- ..."
       
   - type: textarea
-    id: additional-notes
-    attributes:
-      label: Additional Notes
-      description: "Any additional information, context, or related issues."
-      placeholder: "- Note 1: [Information]\n- Note 2: [Information]\n- ..."
-      
-  - type: textarea
     id: attachments
     attributes:
       label: Attachments
